@@ -1,5 +1,10 @@
 import React, { Component } from "react";
-import { FiLoader, FiFastForward, FiTwitter } from "react-icons/fi";
+import {
+  FiLoader,
+  FiFastForward,
+  FiTwitter,
+  FiRefreshCw
+} from "react-icons/fi";
 
 class App extends Component {
   constructor() {
@@ -75,7 +80,12 @@ class App extends Component {
             onClick={this.handleClick}
             onKeyPress={this.handleClick}
           >
-            <FiFastForward />
+            <FiRefreshCw
+              style={{
+                animation:
+                  !this.state.loading && "spinner ease-out 0.75s forwards"
+              }}
+            />
           </a>
           <a
             id="tweet-quote"
