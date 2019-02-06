@@ -62,7 +62,7 @@ class App extends Component {
       <div id="quote-box" className="quote-container">
         <blockquote
           style={{
-            animation: !this.state.loading && "appear linear 1.5s forwards"
+            animation: !this.state.loading && "appear linear 0.75s forwards"
           }}
         >
           <p id="text">{text}</p>
